@@ -1,0 +1,48 @@
+<HTML>
+  <head>
+    <title>Paper Blog</title>
+    <link rel="stylesheet" type="text/css" href="css/PaperProject.css">
+
+    <!-- fake JSON data-->
+    <script src="script/blogJSON.js"></script>
+
+    <script src="script/PaperProject.js"></script>
+  </head>
+  <body>
+    <img class="top-banner" src="img/top-banner.png">
+    <div class="wrapper">
+      <div class="toprow">
+        <section class="header-left">
+          <a href="/" class="sitelogo" itemprop="url">
+            <img src="img/site-logo.svg" alt="Paper" itemprop="logo">
+          </a>
+        </section>
+
+        <section class="header-right">
+          <nav class="nav cf" role="navigation">
+            <div class="container">
+              <input type="search" id="searchText" placeholder="Search messages"/>
+            </div>
+          </nav>
+        </section>
+      </div>
+    </div>
+
+    <br>
+    <h2>Blog: <span id="blogTitle">Thread 1</span></h2>
+
+    <div class="blogContainer" id="blogContainer">
+    </div>
+    <div class="overlay" id="overlay">
+      <div class="darken"></div>
+      <div class="commentBody">
+        <div class="popupTitle">Enter Comment: <span class="closeIcon" id="closeComment">X</span>
+          <div class="postComments">
+            <textarea class="postCommentsText" id="postCommentsText"></textarea>
+            <button class="postCommentSave" id="saveComment">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</HTML>
